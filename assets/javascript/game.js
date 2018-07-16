@@ -22,9 +22,7 @@ document.onkeydown = function (event) {
 		updateLetters();
 		for (i=0; i<lettersUnpicked.length; i++)
 			if (userGuess === lettersUnpicked[i]) {
-				console.log('user guess is ' + userGuess);
 				var userGuessIndex = lettersUnpicked.indexOf(userGuess);
-				console.log(userGuessIndex);
 				lettersUnpicked.splice(i, 1);
 			}
 		checkPassword(userGuess);
@@ -53,11 +51,8 @@ function newGame () {
 
 //picks random password, creates blank for each letter with an id = blank(id)
 function setPassword () {
-	console.log("setPassword ran");
 	currentPassword = passwordList[Math.floor(Math.random() * passwordList.length)];
-	console.log(currentPassword);
 	var passwordLength = currentPassword.length;
-	console.log(passwordLength);
 	for (i=0; i < passwordLength; i++) {
 		var blanks = document.createElement("span");
 		blanks.className = "blank";
@@ -130,7 +125,6 @@ function lose() {
 //removes button and restarts game
 function playAgain () {
 		gameOver = true;
-	console.log('play again ran');
 	document.getElementById('button').classList.remove("invisible");
 }
 

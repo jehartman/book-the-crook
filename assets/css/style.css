@@ -5,15 +5,9 @@
 */
 
 /**************************ELEMENTS***************************/
-/*
-div {
-	border: 1px solid black;
-}
-*/
-
 
 body {
-font-family: 'Skranji', cursive;
+	font-family: 'Skranji', cursive;
 	font-size: 1em;
 	color: #647901;
 	background-repeat: repeat;
@@ -24,26 +18,12 @@ font-family: 'Skranji', cursive;
 	box-sizing: border-box;
 }
 
-h2 {
-	padding: 0 0 0 10px;
-}
-
-header {
+button {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.2em;
 	color: white;
-/*font-family: 'Skranji', cursive;*/
-	font-size: 2.5em;
-	font-weight: 500;
-	text-align: center;
-/*	text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;*/
-	line-height: 1;
-	background-color: black;
-/*	background-image: url("../images/bars2.jpg");*/
-	box-sizing: border-box;
-	height: 60px;
-	width: 100%;
-/*	margin: 0 0 10px 0;*/
-/*	border-bottom: 3px solid black;*/
-/*	padding-top: 20px;*/
+	background-color: #3366cc;
+	margin: 10px auto;
 }
 
 footer {
@@ -60,18 +40,34 @@ footer {
     width: 100%;
 }
 
+h1 {
+	text-align: center;
+	font-size: 1.1em;
+	margin: none;
+}
+
+h2 {
+	text-align: center;
+	font-size: .8em;
+	margin: none;
+}
+
+header {
+	color: white;
+	font-size: 2.5em;
+	font-weight: 500;
+	text-align: center;
+	line-height: 1;
+	background-color: black;
+	box-sizing: border-box;
+	width: 100%;
+}
+
 
 table {
 	width: 100%;
 }
 
-button {
-	font-family: 'Oswald', sans-serif;
-	font-size: 1.2em;
-	color: white;
-	background-color: #3366cc;
-	margin: 10px auto;
-}
 
 /***************************CLASSES*********************/
 
@@ -93,7 +89,6 @@ button {
 	   flex-flow: column;
 	   justify-content: space-around;
 }
-
 
 .greenHighlight {
 	color: green;
@@ -121,21 +116,16 @@ button {
 .stats {
 	padding: 20px;
 	background-color: lightgrey;
-	border: 2px solid white;
 	font-size: .8em;
 }
 
 /***************************IDS***************************/
 
-#alreadyPicked, #notYetPicked {
-
-}
-
-
 #blanksContainer {
 	font-family: 'Roboto Mono', monospace;
 	font-weight: 900;
 	flex: 2;
+	margin: 40px 0 0 0;
 }
 
 #button {
@@ -158,26 +148,8 @@ button {
 	border-bottom: 1px solid black;
 }
 
-
-#gameTitle {
-	text-align: center;
-	font-size: 1.1em;
-	margin: none;
-}
-
-#hacker {
-	width: 70px;
-	height: 70px;
-}
-
-#handcuffs {
-	width: 90px;
-	height: 75px;
-}
-
-
 #instructionsLeft {
-	padding: 0 20px 0 0;
+	padding: 0 20px 0 10%;
 	flex: 1;
 }
 
@@ -189,7 +161,7 @@ button {
 
 #instructionsRight p {
 	font-family: 'Roboto', sans-serif;
-	padding: 10px 15px 0 15px;
+	padding: 10px 25px 0 15px;
 }
 
 #panelOne {
@@ -212,8 +184,6 @@ button {
 	text-align: center;
 	width: 90%;
 	margin: 10px auto;
-/*	background-color: #fff;*/
-
 }
 
 #panelOne, #panelTwo, #panelThree {
@@ -225,7 +195,6 @@ button {
 #panelWrapper {
 	margin: 10px 20px;
 	padding: 10px;
-/*	background-color: #608341;*/
     background: linear-gradient(#809C67, #608341);
 }
 
@@ -237,4 +206,3 @@ button {
 #guessesRemaining {
 		flex: 1;
 }
-
