@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Skranji|Source+Sans+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<title>Book the Crook</title>
+</head>
+<body>
+	<header>
+<!-- 		<table>
+			<tr> -->
+<!-- 				<td><img id="hacker" src="assets/images/hacker3redeyes.png" alt="hacker"></td> -->
+				<p id="gameTitle">BOOK THE CROOK</p>
+<!-- 				<td><img id="handcuffs" src="assets/images/handcuffs.png" alt="handcuffs"></td> -->
+<!-- 			</tr>		 -->
+<!-- 		</table> -->
+	</header>
+
+<div id='panelWrapper'>
+	<div id="panelOne">
+		<div id="instructionsLeft">
+			<h2>Instructions:</h2>
+		</div>
+		<div id="instructionsRight">
+			<p>Oh no! The prosecutor thinks that a hacker may have committed a cyber crime. You are a detective assigned the case. Press a key to guess a letter in the crook's email password. Guess them all and the offender gets another year on his sentence. Be careful-- after ten guesses the crook deletes that account.</p>
+		</div>
+	</div>
+	<div id='panelTwo'>
+		<div class="gameRow">
+			<p id="blanksContainer"></p>
+			<p id="guessesRemaining" class='fontLarge'>Guesses Remaining: <span id="remaining">10</span></p>
+			<p id='feedback'></p>
+		</div>
+	</div>
+	<div id="panelThree">
+		<table>
+			<tbody>
+				<tr>
+					<td class='guessRow fontLarge'>
+						Letters Guessed:
+					</td>
+					<td class='guessRow fontLarge'>
+						Letters Remaining:
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span id="alreadyPicked"></span>
+					</td>
+					<td>
+						<span id="notYetPicked"></span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<table>
+			<tbody>
+				<tr>
+					<td  class='stats'>
+						Attempts at Prosecution:
+					</td>
+					<td  class='stats'>
+						Years Sentenced to Prison:
+					</td>
+					<td  class='stats'>
+						Crimes Gotten Away With:
+					</td>
+				</tr>
+				<tr>
+					<td  class='stats'>
+						<span id="attempts">0</span>
+					</td>
+					<td  class='stats'>
+						<span id="wins">0</span>
+					</td>
+					<td  class='stats'>
+						<span id="losses">0</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div>
+			<button class='invisible' id="button">Break Into Another Hacker Account</button>
+		</div>
+	</div>
+</div>
+
+
+<footer>
+	<div id='footer'>Copyright Jeff Hartman 2017</div>
+</footer>
+
+<script src="assets/javascript/game.js"></script>
+	
+</body>
+
+</html>

@@ -1,0 +1,240 @@
+/*organized alphabetically by:;
+	element
+	class
+	id
+*/
+
+/**************************ELEMENTS***************************/
+/*
+div {
+	border: 1px solid black;
+}
+*/
+
+
+body {
+font-family: 'Skranji', cursive;
+	font-size: 1em;
+	color: #647901;
+	background-repeat: repeat;
+	background-color: black;
+	margin: 0;
+	padding-bottom: 50px;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+h2 {
+	padding: 0 0 0 10px;
+}
+
+header {
+	color: white;
+/*font-family: 'Skranji', cursive;*/
+	font-size: 2.5em;
+	font-weight: 500;
+	text-align: center;
+/*	text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;*/
+	line-height: 1;
+	background-color: black;
+/*	background-image: url("../images/bars2.jpg");*/
+	box-sizing: border-box;
+	height: 60px;
+	width: 100%;
+/*	margin: 0 0 10px 0;*/
+/*	border-bottom: 3px solid black;*/
+/*	padding-top: 20px;*/
+}
+
+footer {
+	font-size: 1em;
+	text-align: center;
+	border-top: 4px solid black;
+	margin-top: 25px;
+	background-image: url("../images/bars2.jpg");
+	background-color: #FFD95C;
+	padding: 15px 0 15px 0;
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+table {
+	width: 100%;
+}
+
+button {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.2em;
+	color: white;
+	background-color: #3366cc;
+	margin: 10px auto;
+}
+
+/***************************CLASSES*********************/
+
+.blank {
+	margin: auto;
+}
+
+.blanks {
+ 	text-align: center;
+}
+
+.fontLarge {
+	font-size: 1.5em;
+}
+
+.gameRow {
+	width: 100%;
+	display: flex;
+	   flex-flow: column;
+	   justify-content: space-around;
+}
+
+
+.greenHighlight {
+	color: green;
+	background-color: yellow;
+}
+
+.guessRow {
+	width: 50%;
+	padding-bottom: 20px;
+}
+
+.invisible {
+	display: none;
+}
+
+.red {
+	color: red;
+}
+
+.redHighlight {
+	color: red;
+	background-color: yellow;
+}
+
+.stats {
+	padding: 20px;
+	background-color: lightgrey;
+	border: 2px solid white;
+	font-size: .8em;
+}
+
+/***************************IDS***************************/
+
+#alreadyPicked, #notYetPicked {
+
+}
+
+
+#blanksContainer {
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 900;
+	flex: 2;
+}
+
+#button {
+	padding: 2px 5px;
+}
+
+#feedback {
+	font-size: 1em;
+		flex: 1;
+}
+
+#footer {
+	background-color: white;
+	margin: 0 auto;
+	width: 50%;
+}
+
+#game {
+	padding-bottom: 30px;
+	border-bottom: 1px solid black;
+}
+
+
+#gameTitle {
+	text-align: center;
+	font-size: 1.1em;
+	margin: none;
+}
+
+#hacker {
+	width: 70px;
+	height: 70px;
+}
+
+#handcuffs {
+	width: 90px;
+	height: 75px;
+}
+
+
+#instructionsLeft {
+	padding: 0 20px 0 0;
+	flex: 1;
+}
+
+
+#instructionsRight {
+	letter-spacing: -.5px;
+	flex: 3;
+}
+
+#instructionsRight p {
+	font-family: 'Roboto', sans-serif;
+	padding: 10px 15px 0 15px;
+}
+
+#panelOne {
+	font-size: 1em;
+	width: 90%;
+	margin: 10px auto 10px;
+	display: flex;
+	background-color: #fff;
+}
+
+#panelThree {
+	font-size: 1em;
+	text-align: center;
+	width: 90%;
+	margin: 0 auto 10px;
+	background-color: #fff;
+}
+
+#panelTwo {
+	text-align: center;
+	width: 90%;
+	margin: 10px auto;
+/*	background-color: #fff;*/
+
+}
+
+#panelOne, #panelTwo, #panelThree {
+	box-shadow: 5px 5px 5px #3f3f3f;
+		padding: 10px;
+			background: linear-gradient(#fff, #d8e1d1);
+}
+
+#panelWrapper {
+	margin: 10px 20px;
+	padding: 10px;
+/*	background-color: #608341;*/
+    background: linear-gradient(#809C67, #608341);
+}
+
+#parent {
+	padding: 5px 10px;
+	width: 100%;
+}
+
+#guessesRemaining {
+		flex: 1;
+}
+
